@@ -1,0 +1,42 @@
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li routerLinkActive="active">
+            <a routerLink="appareil">Appareils</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="login">Authentification</a>
+          </li>
+          <li routerLinkActive="active"><a routerLink="edit">Ajout Appareil</a></li>
+          <li routerLinkActive="active"><a routerLink="user">Utilisateurs</a></li>
+        </ul>
+        <div class="navbar-right">
+          <p>vous étes connecté depuis {{secondes}} secondes</p>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+       <!-- kenet lena 9bal ma naamlou routing
+         <div class="col-xs-12">
+          <h2>Mes appareils</h2>
+          <p>Mise à jour: {{lastUpdate | async | date : 'short' | lowercase}}</p>
+          <ul class="list-group" *ngFor="let appreil of appareils; let i = index">
+          <app-appareil [appareilName]="appreil.name" [appareilStatus]="appreil.status" [indexAppareil] = "i"></app-appareil>-->
+
+           <!--<app-appareil [appareilName]="appareil1" [appareilStatus]="'éteint'"></app-appareil>
+            <app-appareil [appareilName]="appareil2" [appareilStatus]="'allumé'"></app-appareil>
+            <app-appareil [appareilName]="appareil3" [appareilStatus]="'éteint'"></app-appareil>
+          -->
+         <!--</ul>
+          <button class="btn btn-success"
+          (click)="onAllumer()"
+          [disabled]="!isAuth">Tout allumer</button>
+          <button class="btn btn-danger"
+          (click)="onEteindre()"
+          [disabled]="!isAuth">Tout éteindre</button>
+        </div>-->
+        <!--<app-appareil-view></app-appareil-view>-->
+        <router-outlet></router-outlet>
+      </div>
+    </div>
